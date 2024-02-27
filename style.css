@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(20, 30, 40);
+    font-family: "Baskervville", sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+    width: 95vw;
+    max-width: 1100px;
+    height: 65vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.header h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 70px;
+    color: orangered;
+    margin: auto;
+}
+
+.header p {
+    font-size: 20px;
+    color: orangered;
+    margin: auto;
+}
+
+.author-social {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px 0 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.author {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    width: 50%;
+}
+
+.inner-author-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.inner-author-link:hover {
+    background-color: #306203;
+}
+
+.date-author {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    font-size: 30px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.magazine-text {
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    text-align: justify;
+    margin: 5% auto;
+    padding: 0 25px;
+    max-width: 1100px;
+    grid-column: 2 / 3;
+    column-width: 17rem;
+}
+
+hr {
+    height: 2px;
+    border: 1px solid rgba(120, 120, 120, 0.6);
+}
+
+.quote {
+    padding: 15px 0;
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    color: #00beef;
+}
+
+.quote::before {
+    content: '"';
+}
+
+.quote::after {
+    content: '"';
+}
+
+.magazine-history {
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    margin: 0 auto 5%;
+    max-width: 1100px;
+}
+
+.left-list {
+    font-size: 20px;
+}
+
+.left-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-list ul li {
+    margin: 5% 0;
+}
+
+.right-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 20px;
+}
+
+.image1,
+.image3 {
+    grid-column: 1/-1;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.blue-heading {
+    color: #00beef;
+}
+
+.first-paragraph::first-letter {
+    font-size: 50px;
+    color: orangered;
+    float: left;
+    margin-right: 1rem;
+}
